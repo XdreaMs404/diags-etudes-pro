@@ -126,7 +126,7 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
 .cf-intro{grid-column:1/-1;margin-top:calc(var(--u)*2.5);max-width:34em}
 .cf-corps{grid-column:1/-1;margin-top:calc(var(--u)*5)}
 .cf-part{border-top:1px solid var(--encre);padding:calc(var(--u)*2) 0 calc(var(--u)*3.5)}
-.cf-part h3{font-size:21px;line-height:26px}
+.cf-part h2{font-size:21px;line-height:26px;font-stretch:84%;font-weight:720;letter-spacing:-.018em}
 .cf-txt{margin-top:calc(var(--u)*1.25);max-width:38em}
 .cf-txt > * + *{margin-top:calc(var(--u)*1.5)}
 .cf-txt li{position:relative;padding-left:22px}
@@ -138,12 +138,12 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
 @media (min-width:720px){
   .cf-corps{display:grid;grid-template-columns:subgrid}
   .cf-part{grid-column:1/-1;display:grid;grid-template-columns:subgrid;align-items:start}
-  .cf-part h3{grid-column:1/span 3;font-size:24px;line-height:28px}
+  .cf-part h2{grid-column:1/span 3;font-size:24px;line-height:28px}
   .cf-txt{grid-column:4/-1;margin-top:0}
 }
 @media (min-width:1080px){
   .cf-intro{grid-column:1/span 8}
-  .cf-part h3{grid-column:1/span 4}
+  .cf-part h2{grid-column:1/span 4}
   .cf-txt{grid-column:5/span 7}
 }
 
@@ -168,7 +168,7 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
     <p class="lead cf-intro">Vous avez reçu un mail ou un appel de Maxime Hecquet, auditeur énergétique RGE&nbsp;? Voici, en clair, ce que nous faisons de vos coordonnées professionnelles.</p>
     <div class="cf-corps">
       <section class="cf-part" aria-labelledby="cf-qui">
-        <h3 id="cf-qui">Qui en est responsable</h3>
+        <h2 id="cf-qui">Qui en est responsable</h2>
         <div class="cf-txt">
           <p>Diags &amp; Études du Bâtiment, SAS, 41 rue Joyeuse, 59148 Flines-lez-Raches, SIREN <span class="num">994 770 402</span>.</p>
           <p>Contact&nbsp;: Maxime Hecquet, <a href="mailto:m.hecquet@diags-etudes.com">m.hecquet@diags-etudes.com</a>, <a class="num" href="tel:+33762453434">07 62 45 34 34</a>. Le plus simple&nbsp;: répondez à mon mail.</p>
@@ -176,7 +176,7 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-pourquoi">
-        <h3 id="cf-pourquoi">Pourquoi nous vous écrivons</h3>
+        <h2 id="cf-pourquoi">Pourquoi nous vous écrivons</h2>
         <div class="cf-txt">
           <p>Pour vous présenter nos missions, l’audit énergétique, le DPE et le DPE projeté, quand elles touchent à votre métier&nbsp;: architectes, maîtres d’œuvre, bureaux d’études, bailleurs, gestionnaires, entreprises de diagnostic. Et pour suivre nos échanges&nbsp;: savoir ce que vous avez répondu, quand vous rappeler, ou ne plus vous écrire.</p>
           <p>Nous le faisons au titre de notre <strong>intérêt légitime</strong>&nbsp;: faire connaître notre travail aux professionnels qui commandent des diagnostics ou les conseillent. Nous n’écrivons qu’à des professionnels, sur leur métier. Jamais à des particuliers.</p>
@@ -184,7 +184,7 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-quoi">
-        <h3 id="cf-quoi">Ce que nous gardons</h3>
+        <h2 id="cf-quoi">Ce que nous gardons</h2>
         <div class="cf-txt">
           <ul>
             <li>le nom de votre organisation, son SIREN, son adresse et son téléphone publiés&nbsp;;</li>
@@ -197,7 +197,7 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-source">
-        <h3 id="cf-source">D’où viennent ces informations</h3>
+        <h2 id="cf-source">D’où viennent ces informations</h2>
         <div class="cf-txt">
           <ul>
             <li>le site de votre organisation&nbsp;: page contact, mentions légales, page d’accueil ou une autre page&nbsp;;</li>
@@ -210,7 +210,7 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-voit">
-        <h3 id="cf-voit">Qui les voit</h3>
+        <h2 id="cf-voit">Qui les voit</h2>
         <div class="cf-txt">
           <ul>
             <li>Maxime Hecquet&nbsp;;</li>
@@ -223,7 +223,7 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-ue">
-        <h3 id="cf-ue">Hors de l’Union européenne</h3>
+        <h2 id="cf-ue">Hors de l’Union européenne</h2>
         <div class="cf-txt">
           <p>Netlify est une société américaine. Anthropic traite les données par sa filiale irlandaise, mais les stocke aux États-Unis. Les données confiées à ces deux prestataires passent donc aux États-Unis&nbsp;; celles d’Anthropic peuvent aussi être traitées dans d’autres pays. Google peut aussi en traiter hors de l’Union européenne. Les garanties&nbsp;:</p>
           <ul>
@@ -236,20 +236,20 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-duree">
-        <h3 id="cf-duree">Combien de temps</h3>
+        <h2 id="cf-duree">Combien de temps</h2>
         <div class="cf-txt">
           <p>3&nbsp;ans après notre dernier échange&nbsp;: votre dernier message ou appel&nbsp;; si vous ne nous avez jamais répondu, 3&nbsp;ans après la date où nous avons relevé votre adresse. Ensuite, nous effaçons tout.</p>
           <p>Si vous nous dites non, nous gardons seulement une trace&nbsp;: une empreinte codée de votre adresse (pas l’adresse elle-même) et la date, au moins 3&nbsp;ans. C’est ce qui nous permet de ne plus jamais vous écrire.</p>
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-stop">
-        <h3 id="cf-stop">Ne plus avoir de nos nouvelles</h3>
+        <h2 id="cf-stop">Ne plus avoir de nos nouvelles</h2>
         <div class="cf-txt">
           <p class="cf-stop"><strong>Répondez «&nbsp;non merci&nbsp;» ou «&nbsp;stop&nbsp;» à n’importe lequel de nos mails.</strong> Ou dites-le au téléphone. Pas besoin de justifier. Sous 24&nbsp;heures, nous arrêtons tout contact avec vous&nbsp;: mail, téléphone, courrier.</p>
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-droits">
-        <h3 id="cf-droits">Vos autres droits</h3>
+        <h2 id="cf-droits">Vos autres droits</h2>
         <div class="cf-txt">
           <p>Vous pouvez nous demander&nbsp;:</p>
           <ul>
@@ -262,19 +262,19 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-decide">
-        <h3 id="cf-decide">Une personne décide, toujours</h3>
+        <h2 id="cf-decide">Une personne décide, toujours</h2>
         <div class="cf-txt">
           <p>L’intelligence artificielle propose&nbsp;; une personne décide. Aucune décision automatique ne vous concerne. Chaque mail est relu et validé par Maxime Hecquet avant de partir.</p>
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-donnee">
-        <h3 id="cf-donnee">Vous nous avez donné votre adresse vous-même&nbsp;?</h3>
+        <h2 id="cf-donnee">Vous nous avez donné votre adresse vous-même&nbsp;?</h2>
         <div class="cf-txt">
           <p>Les mêmes règles s’appliquent. Nous l’utilisons pour vous envoyer ce que vous avez demandé et suivre l’échange. Vous n’étiez pas obligé de nous la donner.</p>
         </div>
       </section>
       <section class="cf-part" aria-labelledby="cf-cnil">
-        <h3 id="cf-cnil">Une réclamation</h3>
+        <h2 id="cf-cnil">Une réclamation</h2>
         <div class="cf-txt">
           <p>Si vous pensez que nous ne respectons pas vos droits, vous pouvez saisir la CNIL (<a href="https://www.cnil.fr/">cnil.fr</a>). Vous pouvez aussi nous écrire d’abord&nbsp;: nous corrigerons.</p>
         </div>

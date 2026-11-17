@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Confidentialité · Diags &amp; Études du Bâtiment</title>
+<meta name="description" content="Ce que Diags &amp; Études du Bâtiment fait des coordonnées professionnelles des personnes à qui Maxime Hecquet écrit ou téléphone : responsable, sources, destinataires, durée, vos droits.">
+<meta name="theme-color" content="#f3f2ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23f3f2ec'/%3E%3Crect y='2' width='7' height='3' fill='%23009c6d'/%3E%3Crect y='6.5' width='11' height='3' fill='%23f4e70f'/%3E%3Crect y='11' width='16' height='3' fill='%23d7221f'/%3E%3C/svg%3E">
+<link rel="preload" href="../fonts/affiche-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+
+@font-face{font-family:"Affiche Grotesk";src:url("../fonts/affiche-grotesk.woff2") format("woff2");font-weight:400 800;font-stretch:75% 100%;font-style:normal;font-display:optional}
+@property --k{syntax:"<percentage>";inherits:false;initial-value:100%}
+
+/* ---------- Jetons ---------- */
+:root{
+  --papier:#f3f2ec;--encre:#121212;--encre-2:#45443f;--filet:rgba(18,18,18,.075);--filet-fort:rgba(18,18,18,.38);
+  --vert:#0a6045;--vert-2:#0b5a40;--vert-3:#06402e;
+  --a:#009c6d;--b:#52b153;--c:#78bd76;--d:#f4e70f;--e:#f0b50f;--f:#eb8235;--g:#d7221f;
+  --u:8px;--cols:4;--marge:16px;--gout:12px;--max:1520px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --t-corps:17px;--l-corps:calc(var(--u)*3);
+  --t-petit:14px;--l-petit:calc(var(--u)*2.5);
+  --t-lead:19px;--l-lead:calc(var(--u)*3.5);
+  --t-h1:calc(var(--u)*5.5);--l-h1:calc(var(--u)*5.5);
+  --t-h2:calc(var(--u)*4);--l-h2:calc(var(--u)*4.25);
+  --t-h3:calc(var(--u)*3.25);--l-h3:calc(var(--u)*3.5);
+  --t-grand:calc(var(--u)*4.5);--l-grand:calc(var(--u)*4.75);
+  --t-nom:calc(var(--u)*5);--pas-zone:.5;
+  --section:calc(var(--u)*7);
+}
+@media (min-width:720px){:root{
+  --cols:8;--marge:32px;--gout:16px;
+  --t-corps:18px;--l-corps:calc(var(--u)*3.5);--t-lead:21px;--l-lead:calc(var(--u)*3.75);
+  --t-h1:calc(var(--u)*8);--l-h1:calc(var(--u)*7.5);--t-h2:calc(var(--u)*5.5);--l-h2:calc(var(--u)*5.5);
+  --t-h3:calc(var(--u)*4);--l-h3:calc(var(--u)*4.25);--t-grand:calc(var(--u)*6.5);--l-grand:calc(var(--u)*6.5);
+  --t-nom:calc(var(--u)*7.5);--pas-zone:1;--section:calc(var(--u)*11);
+}}
+@media (min-width:1080px){:root{
+  --cols:12;--marge:48px;--gout:24px;
+  --t-h1:calc(var(--u)*10);--l-h1:calc(var(--u)*9.5);--t-h2:calc(var(--u)*7);--l-h2:calc(var(--u)*7);
+  --t-h3:calc(var(--u)*4.5);--l-h3:calc(var(--u)*5);--t-grand:calc(var(--u)*8);--l-grand:calc(var(--u)*8);
+  --t-nom:calc(var(--u)*9);--section:calc(var(--u)*11);
+}}
+@media (min-width:1360px){:root{--t-h1:calc(var(--u)*12);--l-h1:calc(var(--u)*11)}}
+
+/* ---------- Socle ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--papier);color:var(--encre);-webkit-text-size-adjust:100%;text-size-adjust:100%;scrollbar-color:var(--encre) var(--papier);scroll-padding-top:var(--u);touch-action:manipulation;-webkit-tap-highlight-color:rgba(244,231,15,.45)}
+@media (max-width:719.98px){html{scroll-padding-bottom:calc(var(--u)*10)}}
+body{margin:0;font-family:"Affiche Grotesk","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:var(--t-corps);line-height:var(--l-corps);font-weight:420;font-stretch:100%;font-kerning:normal;overflow-x:hidden}
+::selection{background:var(--d);color:var(--encre)}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:var(--papier)}
+::-webkit-scrollbar-thumb{background:var(--encre);border:3px solid var(--papier)}
+h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0;padding:0}
+ul,ol{list-style:none}
+strong,b{font-weight:700}
+p,dd,li{text-wrap:pretty}
+a{color:inherit;text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:.22em;transition:color .2s,text-decoration-thickness .2s}
+a:hover{color:var(--vert);text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--encre);outline-offset:3px}
+a:not(.bouton):focus-visible{background:var(--d);color:var(--encre);outline-offset:2px}
+.num{font-variant-numeric:lining-nums;white-space:nowrap}
+.cache{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+
+/* La trame : la grille modulaire visible, en filets fins */
+.trame{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.trame::before{content:"";position:absolute;top:0;bottom:0;left:max(var(--marge),calc((100% - var(--max))/2 + var(--marge)));width:calc(min(100%,var(--max)) - 2*var(--marge) + var(--gout));background-image:linear-gradient(to right,var(--filet) 1px,transparent 1px);background-size:calc(100% / var(--cols)) 100%}
+.trame::after{content:"";position:absolute;top:0;bottom:0;right:max(var(--marge),calc((100% - var(--max))/2 + var(--marge)));width:1px;background:var(--filet)}
+
+.g{max-width:var(--max);margin-inline:auto;padding-inline:var(--marge);display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));column-gap:var(--gout);position:relative}
+.affiche{padding-block:var(--section)}
+.affiche:not(.ouv) > .g::before{content:"";grid-column:1/-1;height:2px;background:var(--encre);margin-bottom:calc(var(--u)*5)}
+.affiche:not(.ouv) > .g::after{content:"";position:absolute;right:var(--marge);top:calc(2px + var(--u));width:calc(var(--u)*10.5);height:var(--u);background:linear-gradient(to right,var(--a) 0 14.29%,var(--b) 14.29% 28.57%,var(--c) 28.57% 42.86%,var(--d) 42.86% 57.14%,var(--e) 57.14% 71.43%,var(--f) 71.43% 85.71%,var(--g) 85.71%)}
+
+h1,h2,.grand,.nom{font-stretch:78%;font-weight:760;letter-spacing:-.028em;text-wrap:balance}
+h1{font-size:var(--t-h1);line-height:var(--l-h1)}
+h2{font-size:var(--t-h2);line-height:var(--l-h2);grid-column:1/-1}
+h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:720;letter-spacing:-.018em}
+.lead{font-size:var(--t-lead);line-height:var(--l-lead)}
+.petit{font-size:var(--t-petit);line-height:var(--l-petit)}
+.legende{font-size:13px;line-height:calc(var(--u)*2);color:var(--encre-2);margin-top:calc(var(--u)*1.5)}
+
+/* ---------- Actions ---------- */
+.bouton{display:flex;align-items:center;justify-content:space-between;gap:calc(var(--u)*2);min-height:calc(var(--u)*7);padding:0 calc(var(--u)*2.5);font-size:18px;line-height:22px;font-weight:680;text-decoration:none;position:relative;transition:background-color .2s,color .2s,transform .2s var(--ease)}
+.bouton:active{transform:translateY(1px)}
+.bouton-plein{background:var(--vert);color:var(--papier);margin-right:calc(var(--u)*3.5)}
+.bouton-plein::after{content:"";position:absolute;left:calc(100% - 1px);top:0;bottom:0;width:calc(var(--u)*3.5);background:inherit;clip-path:polygon(0 0,100% 50%,0 100%)}
+.bouton-plein:hover{background:var(--vert-3);color:var(--papier)}
+.bouton-plein:focus-visible{outline:0}
+/* Anneau de focus qui suit la flèche : 3 px d'encre à 3 px du bouton (pointe à 45°, décalages calculés) */
+.bouton-plein:focus-visible::before{content:"";position:absolute;top:-6px;bottom:-6px;left:-6px;right:-35.5px;background:var(--encre);pointer-events:none;clip-path:polygon(evenodd,0 0,calc(100% - 34px) 0,100% 50%,calc(100% - 34px) 100%,0 100%,0 0,3px 3px,3px calc(100% - 3px),calc(100% - 35.3px) calc(100% - 3px),calc(100% - 4.3px) 50%,calc(100% - 35.3px) 3px,3px 3px)}
+.barre-fixe .bouton-plein:focus-visible{outline:3px solid var(--encre);outline-offset:3px}.barre-fixe .bouton-plein:focus-visible::before{display:none}
+@media (forced-colors:active){.bouton-plein:focus-visible{outline:3px solid CanvasText}.bouton-plein:focus-visible::before{display:none}}
+.bouton-trait{border:2px solid var(--encre);color:var(--encre);background:transparent}
+.bouton-trait:hover{background:var(--encre);color:var(--papier)}
+.bouton .num{font-weight:620}
+.actions{display:flex;flex-direction:column;gap:calc(var(--u)*1.5)}
+.lien-fort{font-weight:650}
+
+/* ---------- En-tête et pied (page annexe) ---------- */
+.tete{grid-column:1/-1;display:grid;grid-template-columns:subgrid;row-gap:calc(var(--u)*1.25);border-top:2px solid var(--encre);padding-top:calc(var(--u)*1.25);font-size:var(--t-petit);line-height:var(--l-petit)}
+.t-marque{grid-column:1/-1;grid-row:1;font-weight:720}
+.t-nom{grid-column:1/span 2}.t-lieu{grid-column:3/span 2}.t-tel{display:none}
+.t-retour{grid-row:1;grid-column:3/-1;justify-self:end;color:var(--encre-2)}
+.t-retour a{display:inline-block;padding-block:4px;margin-block:-4px}
+.t-marque a{text-decoration:none}
+.haut{padding-top:12px}
+@media (max-width:389.98px){.tete{font-size:13px;line-height:18px;font-stretch:92%}}
+@media (min-width:720px){.haut{padding-top:calc(var(--u)*2)}.t-marque{grid-column:1/span 3}.t-nom{grid-column:4/span 3;grid-row:1/span 2}.t-lieu{grid-column:7/span 2;grid-row:1/span 2}.t-retour{grid-row:2;grid-column:1/span 3;justify-self:start}}
+@media (min-width:1080px){.t-lieu{grid-column:7/span 3}.t-tel{display:block;grid-column:10/span 3;grid-row:1/span 2}}
+.pied{padding-block:calc(var(--u)*5) calc(var(--u)*12)}
+.pied .g::before{content:"";grid-column:1/-1;height:2px;background:var(--encre);margin-bottom:calc(var(--u)*2)}
+.pied p{grid-column:1/-1;font-size:13px;line-height:20px;color:var(--encre-2)}
+.pied p + p{margin-top:var(--u)}
+.pied strong{color:var(--encre);font-weight:700}
+@media (min-width:720px){.pied{padding-bottom:calc(var(--u)*6)}.pied p{grid-column:span 4}.pied p + p{margin-top:0}}
+@media (min-width:1080px){.pied p{grid-column:span 3}}
+/* ---------- 10. Confidentialité (B184) : un registre de lecture, sans mouvement ---------- */
+.confid{padding-top:calc(var(--u)*4)}
+.confid h1{grid-column:1/-1}
+.cf-date{grid-column:1/-1;margin-top:calc(var(--u)*1.5);font-size:var(--t-petit);line-height:var(--l-petit);color:var(--encre-2)}
+.cf-intro{grid-column:1/-1;margin-top:calc(var(--u)*2.5);max-width:34em}
+.cf-corps{grid-column:1/-1;margin-top:calc(var(--u)*5)}
+.cf-part{border-top:1px solid var(--encre);padding:calc(var(--u)*2) 0 calc(var(--u)*3.5)}
+.cf-part h3{font-size:21px;line-height:26px}
+.cf-txt{margin-top:calc(var(--u)*1.25);max-width:38em}
+.cf-txt > * + *{margin-top:calc(var(--u)*1.5)}
+.cf-txt li{position:relative;padding-left:22px}
+.cf-txt li + li{margin-top:var(--u)}
+.cf-txt li::before{content:"";position:absolute;left:0;top:calc(var(--l-corps)/2 - 1px);width:12px;height:2px;background:var(--encre)}
+.cf-txt a{overflow-wrap:anywhere}
+.cf-stop{border-left:6px solid var(--vert);padding-left:calc(var(--u)*1.75)}
+.cf-fin{grid-column:1/-1;border-top:1px solid var(--encre);padding-top:calc(var(--u)*2);font-size:var(--t-petit);line-height:var(--l-petit);color:var(--encre-2)}
+@media (min-width:720px){
+  .cf-corps{display:grid;grid-template-columns:subgrid}
+  .cf-part{grid-column:1/-1;display:grid;grid-template-columns:subgrid;align-items:start}
+  .cf-part h3{grid-column:1/span 3;font-size:24px;line-height:28px}
+  .cf-txt{grid-column:4/-1;margin-top:0}
+}
+@media (min-width:1080px){
+  .cf-intro{grid-column:1/span 8}
+  .cf-part h3{grid-column:1/span 4}
+  .cf-txt{grid-column:5/span 7}
+}
+
+</style>
+</head>
+<body>
+<div class="trame" aria-hidden="true"></div>
+<div class="haut"><div class="g">
+    <header class="tete">
+      <p class="t-marque" translate="no"><a href="../">Diags &amp; Études du Bâtiment</a></p>
+      <p class="t-nom">Maxime Hecquet<br><span data-titre>Auditeur énergétique RGE</span></p>
+      <p class="t-lieu">Flines-lez-Raches<br>Hauts-de-France</p>
+      <p class="t-tel"><a class="num lien-fort" href="tel:+33762453434">07 62 45 34 34</a><br>Numéro direct</p>
+      <p class="t-retour"><a href="../">Page Pros</a></p>
+    </header>
+</div></div>
+<main>
+<section class="affiche confid" id="confidentialite" aria-labelledby="t-confid">
+  <div class="g">
+    <h1 id="t-confid">Confidentialité</h1>
+    <p class="cf-date">Mise à jour&nbsp;: <time datetime="2026-11-17">17&nbsp;novembre 2026</time></p>
+    <p class="lead cf-intro">Vous avez reçu un mail ou un appel de Maxime Hecquet, auditeur énergétique RGE&nbsp;? Voici, en clair, ce que nous faisons de vos coordonnées professionnelles.</p>
+    <div class="cf-corps">
+      <section class="cf-part" aria-labelledby="cf-qui">
+        <h3 id="cf-qui">Qui en est responsable</h3>
+        <div class="cf-txt">
+          <p>Diags &amp; Études du Bâtiment, SAS, 41 rue Joyeuse, 59148 Flines-lez-Raches, SIREN <span class="num">994 770 402</span>.</p>
+          <p>Contact&nbsp;: Maxime Hecquet, <a href="mailto:m.hecquet@diags-etudes.com">m.hecquet@diags-etudes.com</a>, <a class="num" href="tel:+33762453434">07 62 45 34 34</a>. Le plus simple&nbsp;: répondez à mon mail.</p>
+          <p>Nous n’avons pas désigné de délégué à la protection des données&nbsp;: c’est moi qui vous réponds.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-pourquoi">
+        <h3 id="cf-pourquoi">Pourquoi nous vous écrivons</h3>
+        <div class="cf-txt">
+          <p>Pour vous présenter nos missions, l’audit énergétique, le DPE et le DPE projeté, quand elles touchent à votre métier&nbsp;: architectes, maîtres d’œuvre, bureaux d’études, bailleurs, gestionnaires, entreprises de diagnostic. Et pour suivre nos échanges&nbsp;: savoir ce que vous avez répondu, quand vous rappeler, ou ne plus vous écrire.</p>
+          <p>Nous le faisons au titre de notre <strong>intérêt légitime</strong>&nbsp;: faire connaître notre travail aux professionnels qui commandent des diagnostics ou les conseillent. Nous n’écrivons qu’à des professionnels, sur leur métier. Jamais à des particuliers.</p>
+          <p>Vos données ne servent à rien d’autre. Nous ne les vendons pas, ne les louons pas, ne les prêtons à personne.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-quoi">
+        <h3 id="cf-quoi">Ce que nous gardons</h3>
+        <div class="cf-txt">
+          <ul>
+            <li>le nom de votre organisation, son SIREN, son adresse et son téléphone publiés&nbsp;;</li>
+            <li>votre adresse mail professionnelle, l’endroit où nous l’avons lue et la date&nbsp;;</li>
+            <li>votre nom et votre fonction, seulement s’ils sont publiés&nbsp;;</li>
+            <li>des faits publics sur votre organisation (une opération, un chantier, un marché), avec leur source et leur date&nbsp;;</li>
+            <li>vos réponses à nos mails, et nos notes d’appel (par exemple «&nbsp;rappeler en mars&nbsp;»).</li>
+          </ul>
+          <p>Rien sur votre vie privée. Jamais de numéro de portable personnel.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-source">
+        <h3 id="cf-source">D’où viennent ces informations</h3>
+        <div class="cf-txt">
+          <ul>
+            <li>le site de votre organisation&nbsp;: page contact, mentions légales, page d’accueil ou une autre page&nbsp;;</li>
+            <li>l’annuaire officiel des diagnostiqueurs du ministère (pour les entreprises de diagnostic)&nbsp;;</li>
+            <li>l’Annuaire des entreprises de l’État&nbsp;;</li>
+            <li>les données publiques des marchés publics (data.gouv.fr), la presse professionnelle et les sites d’autres organisations (une collectivité, un partenaire) qui parlent d’une de vos opérations&nbsp;;</li>
+            <li>ce que vous nous dites vous-même, par mail ou au téléphone.</li>
+          </ul>
+          <p>Le mail que vous avez reçu dit où et quand nous avons lu votre adresse.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-voit">
+        <h3 id="cf-voit">Qui les voit</h3>
+        <div class="cf-txt">
+          <ul>
+            <li>Maxime Hecquet&nbsp;;</li>
+            <li>notre prestataire, qui prépare les mails et tient l’outil de suivi, sous contrat écrit&nbsp;;</li>
+            <li><strong>Google</strong> (la messagerie Google Workspace de l’entreprise)&nbsp;: nos mails, vos réponses, et les petits programmes qui envoient les mails et rangent les réponses&nbsp;;</li>
+            <li><strong>Netlify</strong>&nbsp;: héberge notre outil de suivi (la liste de nos échanges et des refus)&nbsp;;</li>
+            <li><strong>Anthropic</strong>&nbsp;: son intelligence artificielle lit vos réponses pour proposer un classement et un brouillon de réponse, et nous aide à rédiger les mails. Avant de lui passer une réponse, notre outil en retire les adresses mail, les liens et les numéros.</li>
+          </ul>
+          <p>Ces prestataires travaillent pour notre compte, selon nos instructions, sous contrat. Une exception&nbsp;: pour une partie de son travail (lire notre liste de contacts, préparer les fiches), notre prestataire utilise aussi l’assistant Claude d’Anthropic avec son propre abonnement. Anthropic y applique alors ses propres conditions&nbsp;; l’utilisation de ces échanges pour entraîner ses modèles est désactivée.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-ue">
+        <h3 id="cf-ue">Hors de l’Union européenne</h3>
+        <div class="cf-txt">
+          <p>Netlify est une société américaine. Anthropic traite les données par sa filiale irlandaise, mais les stocke aux États-Unis. Les données confiées à ces deux prestataires passent donc aux États-Unis&nbsp;; celles d’Anthropic peuvent aussi être traitées dans d’autres pays. Google peut aussi en traiter hors de l’Union européenne. Les garanties&nbsp;:</p>
+          <ul>
+            <li>Google&nbsp;: vers les États-Unis, le cadre de protection des données UE–États-Unis, auquel Google LLC est certifiée&nbsp;; vers d’autres pays, les clauses contractuelles types de la Commission européenne, prévues dans son avenant sur le traitement des données (<a href="https://cloud.google.com/terms/data-processing-addendum">cloud.google.com/terms/data-processing-addendum</a>)&nbsp;;</li>
+            <li>Netlify&nbsp;: le cadre de protection des données UE–États-Unis, auquel Netlify, Inc. est certifiée&nbsp;; à défaut, les clauses contractuelles types de la Commission européenne. Les deux sont prévues dans son contrat de traitement des données (<a href="https://www.netlify.com/pdf/netlify-dpa.pdf">netlify.com/pdf/netlify-dpa.pdf</a>)&nbsp;;</li>
+            <li>Anthropic (API)&nbsp;: les clauses contractuelles types de la Commission européenne, dans son contrat de traitement des données (<a href="https://www.anthropic.com/legal/data-processing-addendum">anthropic.com/legal/data-processing-addendum</a>)&nbsp;;</li>
+            <li>l’abonnement personnel de notre prestataire&nbsp;: la société responsable est Anthropic Ireland, Limited. Sa politique de confidentialité indique qu’elle transfère les données vers les États-Unis et d’autres pays en s’appuyant sur des décisions d’adéquation de la Commission européenne, sur les clauses contractuelles types et, dans certaines situations, sur des dérogations prévues par la loi (<a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>).</li>
+          </ul>
+          <p>La liste des sociétés certifiées au cadre UE–États-Unis est publique&nbsp;: <a href="https://www.dataprivacyframework.gov/">dataprivacyframework.gov</a>. Vous voulez une copie de ces garanties&nbsp;? Écrivez-nous.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-duree">
+        <h3 id="cf-duree">Combien de temps</h3>
+        <div class="cf-txt">
+          <p>3&nbsp;ans après notre dernier échange&nbsp;: votre dernier message ou appel&nbsp;; si vous ne nous avez jamais répondu, 3&nbsp;ans après la date où nous avons relevé votre adresse. Ensuite, nous effaçons tout.</p>
+          <p>Si vous nous dites non, nous gardons seulement une trace&nbsp;: une empreinte codée de votre adresse (pas l’adresse elle-même) et la date, au moins 3&nbsp;ans. C’est ce qui nous permet de ne plus jamais vous écrire.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-stop">
+        <h3 id="cf-stop">Ne plus avoir de nos nouvelles</h3>
+        <div class="cf-txt">
+          <p class="cf-stop"><strong>Répondez «&nbsp;non merci&nbsp;» ou «&nbsp;stop&nbsp;» à n’importe lequel de nos mails.</strong> Ou dites-le au téléphone. Pas besoin de justifier. Sous 24&nbsp;heures, nous arrêtons tout contact avec vous&nbsp;: mail, téléphone, courrier.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-droits">
+        <h3 id="cf-droits">Vos autres droits</h3>
+        <div class="cf-txt">
+          <p>Vous pouvez nous demander&nbsp;:</p>
+          <ul>
+            <li>ce que nous avons sur vous (droit d’accès)&nbsp;;</li>
+            <li>de le corriger (rectification)&nbsp;;</li>
+            <li>de l’effacer (effacement). Nous gardons alors seulement la trace du refus, pour ne plus vous écrire&nbsp;;</li>
+            <li>de le mettre de côté le temps d’une vérification (limitation).</li>
+          </ul>
+          <p>Répondez à un de nos mails, ou écrivez à <a href="mailto:m.hecquet@diags-etudes.com">m.hecquet@diags-etudes.com</a>. Nous répondons sous un mois au plus.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-decide">
+        <h3 id="cf-decide">Une personne décide, toujours</h3>
+        <div class="cf-txt">
+          <p>L’intelligence artificielle propose&nbsp;; une personne décide. Aucune décision automatique ne vous concerne. Chaque mail est relu et validé par Maxime Hecquet avant de partir.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-donnee">
+        <h3 id="cf-donnee">Vous nous avez donné votre adresse vous-même&nbsp;?</h3>
+        <div class="cf-txt">
+          <p>Les mêmes règles s’appliquent. Nous l’utilisons pour vous envoyer ce que vous avez demandé et suivre l’échange. Vous n’étiez pas obligé de nous la donner.</p>
+        </div>
+      </section>
+      <section class="cf-part" aria-labelledby="cf-cnil">
+        <h3 id="cf-cnil">Une réclamation</h3>
+        <div class="cf-txt">
+          <p>Si vous pensez que nous ne respectons pas vos droits, vous pouvez saisir la CNIL (<a href="https://www.cnil.fr/">cnil.fr</a>). Vous pouvez aussi nous écrire d’abord&nbsp;: nous corrigerons.</p>
+        </div>
+      </section>
+    </div>
+    <p class="cf-fin">Nous mettrons cette page à jour si nos pratiques changent.</p>
+  </div>
+</section>
+</main>
+
+<footer class="pied">
+  <div class="g">
+    <p><strong>DIAGS &amp; ETUDES DU BATIMENT</strong><br>SAS · SIREN <span class="num">994 770 402</span> · RCS Douai</p>
+    <p><strong>Maxime Hecquet</strong> · <span data-titre>Auditeur énergétique RGE</span><br>Qualification RGE OPQIBI 1911, certificat n°&nbsp;<span class="num">26 06 7024</span></p>
+    <p><a href="https://www.diags-etudes.com/">diags-etudes.com</a> · <a href="../">Page Pros</a> · <a href="https://www.diags-etudes.com/mentions-legales.html">Mentions légales</a> · <a href="./" aria-current="page">Confidentialité</a><br>Cette page ne dépose aucun cookie et ne mesure rien.</p>
+    <p>Hébergement&nbsp;: GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+  </div>
+</footer>
+</body>
+</html>

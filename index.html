@@ -107,11 +107,6 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
 .t-marque{grid-column:1/-1;font-weight:720}
 .t-nom{grid-column:1/span 2}.t-lieu{grid-column:3/span 2}.t-tel{display:none}
 .tete{order:-3}
-/* B185 : lien discret vers la partie Confidentialité (téléphone : à droite du nom de l'entreprise ; dès 720 px : dessous) */
-.t-marque{grid-row:1}
-.t-confid{grid-row:1;grid-column:3/-1;justify-self:end;color:var(--encre-2)}
-.t-confid a{display:inline-block;padding-block:4px;margin-block:-4px}
-@media (min-width:720px){.t-confid{grid-row:2;grid-column:1/span 3;justify-self:start}.t-nom,.t-lieu,.t-tel{grid-row:1/span 2}}
 .ouv h1{grid-column:1/-1;margin-top:calc(var(--u)*5);order:-2}
 .ouv-actions{grid-column:1/-1;margin-top:calc(var(--u)*3)}
 .nw{white-space:nowrap}
@@ -362,33 +357,6 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
 @media (min-width:720px){.pied{padding-bottom:calc(var(--u)*6)}.pied p{grid-column:span 4}.pied p + p{margin-top:0}}
 @media (min-width:1080px){.pied p{grid-column:span 3}}
 
-/* ---------- 10. Confidentialité (B184) : un registre de lecture, sans mouvement ---------- */
-.confid h2{grid-column:1/-1}
-.cf-date{grid-column:1/-1;margin-top:calc(var(--u)*1.5);font-size:var(--t-petit);line-height:var(--l-petit);color:var(--encre-2)}
-.cf-intro{grid-column:1/-1;margin-top:calc(var(--u)*2.5);max-width:34em}
-.cf-corps{grid-column:1/-1;margin-top:calc(var(--u)*5)}
-.cf-part{border-top:1px solid var(--encre);padding:calc(var(--u)*2) 0 calc(var(--u)*3.5)}
-.cf-part h3{font-size:21px;line-height:26px}
-.cf-txt{margin-top:calc(var(--u)*1.25);max-width:38em}
-.cf-txt > * + *{margin-top:calc(var(--u)*1.5)}
-.cf-txt li{position:relative;padding-left:22px}
-.cf-txt li + li{margin-top:var(--u)}
-.cf-txt li::before{content:"";position:absolute;left:0;top:calc(var(--l-corps)/2 - 1px);width:12px;height:2px;background:var(--encre)}
-.cf-txt a{overflow-wrap:anywhere}
-.cf-stop{border-left:6px solid var(--vert);padding-left:calc(var(--u)*1.75)}
-.cf-fin{grid-column:1/-1;border-top:1px solid var(--encre);padding-top:calc(var(--u)*2);font-size:var(--t-petit);line-height:var(--l-petit);color:var(--encre-2)}
-@media (min-width:720px){
-  .cf-corps{display:grid;grid-template-columns:subgrid}
-  .cf-part{grid-column:1/-1;display:grid;grid-template-columns:subgrid;align-items:start}
-  .cf-part h3{grid-column:1/span 3;font-size:24px;line-height:28px}
-  .cf-txt{grid-column:4/-1;margin-top:0}
-}
-@media (min-width:1080px){
-  .cf-intro{grid-column:1/span 8}
-  .cf-part h3{grid-column:1/span 4}
-  .cf-txt{grid-column:5/span 7}
-}
-
 /* ---------- Barre fixe (téléphone) ---------- */
 .barre-fixe{position:fixed;left:0;right:0;bottom:0;z-index:10;display:grid;grid-template-columns:1fr 1fr;background:var(--papier);border-top:2px solid var(--encre);padding:8px 8px calc(8px + env(safe-area-inset-bottom));gap:8px}
 .barre-fixe a{min-height:48px;justify-content:center;padding:0 12px;margin:0}
@@ -440,7 +408,6 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
       <p class="t-nom">Maxime Hecquet<br><span data-titre>Auditeur énergétique RGE</span></p>
       <p class="t-lieu">Flines-lez-Raches<br>Hauts-de-France</p>
       <p class="t-tel"><a class="num lien-fort" href="tel:+33762453434">07 62 45 34 34</a><br>Numéro direct</p>
-      <p class="t-confid"><a href="#confidentialite">Confidentialité</a></p>
     </header>
 
     <h1 id="titre"><span class="h1-a">Audit énergétique, DPE et DPE projeté&nbsp;:</span> un délai écrit à chaque étape.</h1>
@@ -737,136 +704,13 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
     </dl>
   </div>
 </section>
-
-<section class="affiche confid" id="confidentialite" aria-labelledby="t-confid">
-  <div class="g">
-    <h2 id="t-confid">Confidentialité</h2>
-    <p class="cf-date">Mise à jour&nbsp;: <time datetime="2026-11-17">17&nbsp;novembre 2026</time></p>
-    <p class="lead cf-intro">Vous avez reçu un mail ou un appel de Maxime Hecquet, auditeur énergétique RGE&nbsp;? Voici, en clair, ce que nous faisons de vos coordonnées professionnelles.</p>
-    <div class="cf-corps">
-      <section class="cf-part" aria-labelledby="cf-qui">
-        <h3 id="cf-qui">Qui en est responsable</h3>
-        <div class="cf-txt">
-          <p>Diags &amp; Études du Bâtiment, SAS, 41 rue Joyeuse, 59148 Flines-lez-Raches, SIREN <span class="num">994 770 402</span>.</p>
-          <p>Contact&nbsp;: Maxime Hecquet, <a href="mailto:m.hecquet@diags-etudes.com">m.hecquet@diags-etudes.com</a>, <a class="num" href="tel:+33762453434">07 62 45 34 34</a>. Le plus simple&nbsp;: répondez à mon mail.</p>
-          <p>Nous n’avons pas désigné de délégué à la protection des données&nbsp;: c’est moi qui vous réponds.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-pourquoi">
-        <h3 id="cf-pourquoi">Pourquoi nous vous écrivons</h3>
-        <div class="cf-txt">
-          <p>Pour vous présenter nos missions, l’audit énergétique, le DPE et le DPE projeté, quand elles touchent à votre métier&nbsp;: architectes, maîtres d’œuvre, bureaux d’études, bailleurs, gestionnaires, entreprises de diagnostic. Et pour suivre nos échanges&nbsp;: savoir ce que vous avez répondu, quand vous rappeler, ou ne plus vous écrire.</p>
-          <p>Nous le faisons au titre de notre <strong>intérêt légitime</strong>&nbsp;: faire connaître notre travail aux professionnels qui commandent des diagnostics ou les conseillent. Nous n’écrivons qu’à des professionnels, sur leur métier. Jamais à des particuliers.</p>
-          <p>Vos données ne servent à rien d’autre. Nous ne les vendons pas, ne les louons pas, ne les prêtons à personne.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-quoi">
-        <h3 id="cf-quoi">Ce que nous gardons</h3>
-        <div class="cf-txt">
-          <ul>
-            <li>le nom de votre organisation, son SIREN, son adresse et son téléphone publiés&nbsp;;</li>
-            <li>votre adresse mail professionnelle, l’endroit où nous l’avons lue et la date&nbsp;;</li>
-            <li>votre nom et votre fonction, seulement s’ils sont publiés&nbsp;;</li>
-            <li>des faits publics sur votre organisation (une opération, un chantier, un marché), avec leur source et leur date&nbsp;;</li>
-            <li>vos réponses à nos mails, et nos notes d’appel (par exemple «&nbsp;rappeler en mars&nbsp;»).</li>
-          </ul>
-          <p>Rien sur votre vie privée. Jamais de numéro de portable personnel.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-source">
-        <h3 id="cf-source">D’où viennent ces informations</h3>
-        <div class="cf-txt">
-          <ul>
-            <li>le site de votre organisation&nbsp;: page contact, mentions légales, page d’accueil ou une autre page&nbsp;;</li>
-            <li>l’annuaire officiel des diagnostiqueurs du ministère (pour les entreprises de diagnostic)&nbsp;;</li>
-            <li>l’Annuaire des entreprises de l’État&nbsp;;</li>
-            <li>les données publiques des marchés publics (data.gouv.fr), la presse professionnelle et les sites d’autres organisations (une collectivité, un partenaire) qui parlent d’une de vos opérations&nbsp;;</li>
-            <li>ce que vous nous dites vous-même, par mail ou au téléphone.</li>
-          </ul>
-          <p>Le mail que vous avez reçu dit où et quand nous avons lu votre adresse.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-voit">
-        <h3 id="cf-voit">Qui les voit</h3>
-        <div class="cf-txt">
-          <ul>
-            <li>Maxime Hecquet&nbsp;;</li>
-            <li>notre prestataire, qui prépare les mails et tient l’outil de suivi, sous contrat écrit&nbsp;;</li>
-            <li><strong>Google</strong> (la messagerie Google Workspace de l’entreprise)&nbsp;: nos mails, vos réponses, et les petits programmes qui envoient les mails et rangent les réponses&nbsp;;</li>
-            <li><strong>Netlify</strong>&nbsp;: héberge notre outil de suivi (la liste de nos échanges et des refus)&nbsp;;</li>
-            <li><strong>Anthropic</strong>&nbsp;: son intelligence artificielle lit vos réponses pour proposer un classement et un brouillon de réponse, et nous aide à rédiger les mails. Avant de lui passer une réponse, notre outil en retire les adresses mail, les liens et les numéros.</li>
-          </ul>
-          <p>Ces prestataires travaillent pour notre compte, selon nos instructions, sous contrat. Une exception&nbsp;: pour une partie de son travail (lire notre liste de contacts, préparer les fiches), notre prestataire utilise aussi l’assistant Claude d’Anthropic avec son propre abonnement. Anthropic y applique alors ses propres conditions&nbsp;; l’utilisation de ces échanges pour entraîner ses modèles est désactivée.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-ue">
-        <h3 id="cf-ue">Hors de l’Union européenne</h3>
-        <div class="cf-txt">
-          <p>Netlify est une société américaine. Anthropic traite les données par sa filiale irlandaise, mais les stocke aux États-Unis. Les données confiées à ces deux prestataires passent donc aux États-Unis&nbsp;; celles d’Anthropic peuvent aussi être traitées dans d’autres pays. Google peut aussi en traiter hors de l’Union européenne. Les garanties&nbsp;:</p>
-          <ul>
-            <li>Google&nbsp;: vers les États-Unis, le cadre de protection des données UE–États-Unis, auquel Google LLC est certifiée&nbsp;; vers d’autres pays, les clauses contractuelles types de la Commission européenne, prévues dans son avenant sur le traitement des données (<a href="https://cloud.google.com/terms/data-processing-addendum">cloud.google.com/terms/data-processing-addendum</a>)&nbsp;;</li>
-            <li>Netlify&nbsp;: le cadre de protection des données UE–États-Unis, auquel Netlify, Inc. est certifiée&nbsp;; à défaut, les clauses contractuelles types de la Commission européenne. Les deux sont prévues dans son contrat de traitement des données (<a href="https://www.netlify.com/pdf/netlify-dpa.pdf">netlify.com/pdf/netlify-dpa.pdf</a>)&nbsp;;</li>
-            <li>Anthropic (API)&nbsp;: les clauses contractuelles types de la Commission européenne, dans son contrat de traitement des données (<a href="https://www.anthropic.com/legal/data-processing-addendum">anthropic.com/legal/data-processing-addendum</a>)&nbsp;;</li>
-            <li>l’abonnement personnel de notre prestataire&nbsp;: la société responsable est Anthropic Ireland, Limited. Sa politique de confidentialité indique qu’elle transfère les données vers les États-Unis et d’autres pays en s’appuyant sur des décisions d’adéquation de la Commission européenne, sur les clauses contractuelles types et, dans certaines situations, sur des dérogations prévues par la loi (<a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>).</li>
-          </ul>
-          <p>La liste des sociétés certifiées au cadre UE–États-Unis est publique&nbsp;: <a href="https://www.dataprivacyframework.gov/">dataprivacyframework.gov</a>. Vous voulez une copie de ces garanties&nbsp;? Écrivez-nous.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-duree">
-        <h3 id="cf-duree">Combien de temps</h3>
-        <div class="cf-txt">
-          <p>3&nbsp;ans après notre dernier échange&nbsp;: votre dernier message ou appel&nbsp;; si vous ne nous avez jamais répondu, 3&nbsp;ans après la date où nous avons relevé votre adresse. Ensuite, nous effaçons tout.</p>
-          <p>Si vous nous dites non, nous gardons seulement une trace&nbsp;: une empreinte codée de votre adresse (pas l’adresse elle-même) et la date, au moins 3&nbsp;ans. C’est ce qui nous permet de ne plus jamais vous écrire.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-stop">
-        <h3 id="cf-stop">Ne plus avoir de nos nouvelles</h3>
-        <div class="cf-txt">
-          <p class="cf-stop"><strong>Répondez «&nbsp;non merci&nbsp;» ou «&nbsp;stop&nbsp;» à n’importe lequel de nos mails.</strong> Ou dites-le au téléphone. Pas besoin de justifier. Sous 24&nbsp;heures, nous arrêtons tout contact avec vous&nbsp;: mail, téléphone, courrier.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-droits">
-        <h3 id="cf-droits">Vos autres droits</h3>
-        <div class="cf-txt">
-          <p>Vous pouvez nous demander&nbsp;:</p>
-          <ul>
-            <li>ce que nous avons sur vous (droit d’accès)&nbsp;;</li>
-            <li>de le corriger (rectification)&nbsp;;</li>
-            <li>de l’effacer (effacement). Nous gardons alors seulement la trace du refus, pour ne plus vous écrire&nbsp;;</li>
-            <li>de le mettre de côté le temps d’une vérification (limitation).</li>
-          </ul>
-          <p>Répondez à un de nos mails, ou écrivez à <a href="mailto:m.hecquet@diags-etudes.com">m.hecquet@diags-etudes.com</a>. Nous répondons sous un mois au plus.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-decide">
-        <h3 id="cf-decide">Une personne décide, toujours</h3>
-        <div class="cf-txt">
-          <p>L’intelligence artificielle propose&nbsp;; une personne décide. Aucune décision automatique ne vous concerne. Chaque mail est relu et validé par Maxime Hecquet avant de partir.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-donnee">
-        <h3 id="cf-donnee">Vous nous avez donné votre adresse vous-même&nbsp;?</h3>
-        <div class="cf-txt">
-          <p>Les mêmes règles s’appliquent. Nous l’utilisons pour vous envoyer ce que vous avez demandé et suivre l’échange. Vous n’étiez pas obligé de nous la donner.</p>
-        </div>
-      </section>
-      <section class="cf-part" aria-labelledby="cf-cnil">
-        <h3 id="cf-cnil">Une réclamation</h3>
-        <div class="cf-txt">
-          <p>Si vous pensez que nous ne respectons pas vos droits, vous pouvez saisir la CNIL (<a href="https://www.cnil.fr/">cnil.fr</a>). Vous pouvez aussi nous écrire d’abord&nbsp;: nous corrigerons.</p>
-        </div>
-      </section>
-    </div>
-    <p class="cf-fin">Nous mettrons cette page à jour si nos pratiques changent.</p>
-  </div>
-</section>
 </main>
 
 <footer class="pied">
   <div class="g">
     <p><strong>DIAGS &amp; ETUDES DU BATIMENT</strong><br>SAS · SIREN <span class="num">994 770 402</span> · RCS Douai</p>
     <p><strong>Maxime Hecquet</strong> · <span data-titre>Auditeur énergétique RGE</span><br>Qualification RGE OPQIBI 1911, certificat n°&nbsp;<span class="num">26 06 7024</span></p>
-    <p><a href="https://www.diags-etudes.com/">diags-etudes.com</a> · <a href="https://www.diags-etudes.com/mentions-legales.html">Mentions légales</a> · <a href="#confidentialite">Confidentialité</a><br>Cette page ne dépose aucun cookie et ne mesure rien.</p>
+    <p><a href="https://www.diags-etudes.com/">diags-etudes.com</a> · <a href="https://www.diags-etudes.com/mentions-legales.html">Mentions légales</a> · <a href="confidentialite/">Confidentialité</a><br>Cette page ne dépose aucun cookie et ne mesure rien.</p>
     <p>Hébergement&nbsp;: GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
   </div>
 </footer>

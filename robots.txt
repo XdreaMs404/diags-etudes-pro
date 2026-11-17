@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pro.diags-etudes.com/sitemap.xml

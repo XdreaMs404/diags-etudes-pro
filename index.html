@@ -107,6 +107,11 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
 .t-marque{grid-column:1/-1;font-weight:720}
 .t-nom{grid-column:1/span 2}.t-lieu{grid-column:3/span 2}.t-tel{display:none}
 .tete{order:-3}
+/* B185 : lien discret vers la partie Confidentialité (téléphone : à droite du nom de l'entreprise ; dès 720 px : dessous) */
+.t-marque{grid-row:1}
+.t-confid{grid-row:1;grid-column:3/-1;justify-self:end;color:var(--encre-2)}
+.t-confid a{display:inline-block;padding-block:4px;margin-block:-4px}
+@media (min-width:720px){.t-confid{grid-row:2;grid-column:1/span 3;justify-self:start}.t-nom,.t-lieu,.t-tel{grid-row:1/span 2}}
 .ouv h1{grid-column:1/-1;margin-top:calc(var(--u)*5);order:-2}
 .ouv-actions{grid-column:1/-1;margin-top:calc(var(--u)*3)}
 .nw{white-space:nowrap}
@@ -435,6 +440,7 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
       <p class="t-nom">Maxime Hecquet<br><span data-titre>Auditeur énergétique RGE</span></p>
       <p class="t-lieu">Flines-lez-Raches<br>Hauts-de-France</p>
       <p class="t-tel"><a class="num lien-fort" href="tel:+33762453434">07 62 45 34 34</a><br>Numéro direct</p>
+      <p class="t-confid"><a href="#confidentialite">Confidentialité</a></p>
     </header>
 
     <h1 id="titre"><span class="h1-a">Audit énergétique, DPE et DPE projeté&nbsp;:</span> un délai écrit à chaque étape.</h1>
@@ -774,6 +780,7 @@ h3{font-size:var(--t-h3);line-height:var(--l-h3);font-stretch:84%;font-weight:72
             <li>le site de votre organisation&nbsp;: page contact, mentions légales, page d’accueil ou une autre page&nbsp;;</li>
             <li>l’annuaire officiel des diagnostiqueurs du ministère (pour les entreprises de diagnostic)&nbsp;;</li>
             <li>l’Annuaire des entreprises de l’État&nbsp;;</li>
+            <li>les données publiques des marchés publics (data.gouv.fr), la presse professionnelle et les sites d’autres organisations (une collectivité, un partenaire) qui parlent d’une de vos opérations&nbsp;;</li>
             <li>ce que vous nous dites vous-même, par mail ou au téléphone.</li>
           </ul>
           <p>Le mail que vous avez reçu dit où et quand nous avons lu votre adresse.</p>
